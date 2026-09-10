@@ -10,24 +10,34 @@
 </head>
 <body style="background-color: #1a1a1a; color: #ffffff; font-family: sans-serif;">
 
-  <audio controls autoplay loop src="Kevin Macleod - Crossing the Divide.mp3"></audio>
+ <!-- Top bar with a hamburger button (top right) that opens a slide-out menu -->
+<nav class="navbar navbar-dark d-flex justify-content-between align-items-center px-3 py-2" style="background-color: #08491f;">
+  <a class="navbar-brand mb-0" style="color: #0b6e3a; font-weight: bold;" href="#">Joshua</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
 
-  <!-- Bootstrap responsive navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #08491f;">
-    <div class="container-fluid">
-      <a class="navbar-brand" style="color: #0b6e3a; font-weight: bold;" href="#">Joshua</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Bootstrap offcanvas: the slide-out menu itself -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" style="background-color: #08491f; color: #ffffff;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" style="color: #0b6e3a;">Menu</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li class="mb-2">
+        <a class="btn w-100" style="background-color: #0b6e3a; color: #ffffff;" href="https://joshuajacobanunciacion-ship-it.github.io/website/#about">About</a>
+      </li>
+      <li class="mb-2">
+        <a class="btn w-100" style="background-color: #0b6e3a; color: #ffffff;" href="https://joshuajacobanunciacion-ship-it.github.io/website/#portfolio">Portfolio</a>
+      </li>
+      <li class="mb-2">
+        <a class="btn w-100" style="background-color: #0b6e3a; color: #ffffff;" href="https://joshuajacobanunciacion-ship-it.github.io/website/#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
   <!-- About section -->
   <section id="about" class="container text-center py-5">
@@ -100,13 +110,13 @@
   <!-- Contact -->
   <section id="contact" class="container text-center py-5">
     <h2 style="color: #0b6e3a;" class="mb-3">Contact</h2>
-    <a href="mailto:SOLM@gmail.com" target="_self" title="send me an email if you want to join the Lasallian Family" style="color: #ffffff; background-color: #0b6e3a; padding: 10px 16px; border-radius: 6px; text-decoration: none;">
+    <a href="mailto:joshuajacob.anunciacion@antipolo.benilde.edu.ph" target="_self" title="send me an email if you want to join the Lasallian Family" style="color: #ffffff; background-color: #0b6e3a; padding: 10px 16px; border-radius: 6px; text-decoration: none;">
       contact me!
     </a>
   </section>
 
   <footer class="text-center py-3" style="background-color: #08491f; color: #d4d4d4;">
-    &copy; Joshua &mdash; DLS-CSB
+    &copy; Anunciacion &mdash; DLS-CSB
   </footer>
 
   <!-- Bootstrap JS bundle (needed for the navbar toggler on mobile) -->
